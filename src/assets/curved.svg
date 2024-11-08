@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2789" height="250" viewBox="0 0 2789 250">
+  <defs>
+    <filter id="Tracé_1" x="-30" y="-12.144" width="2922.819" height="584.399" filterUnits="userSpaceOnUse">
+      <feOffset dy="-3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.129"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-curved">
+      <rect width="2789" height="250"/>
+    </clipPath>
+  </defs>
+  <g id="curved" clip-path="url(#clip-curved)">
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracé_1)">
+      <path id="Tracé_1-2" data-name="Tracé 1" d="M0-38.172s83.318-225.911,1374.368,0,1488.451,0,1488.451,0V385.822H0Z" transform="translate(0 159.43)" fill="#ececec"/>
+    </g>
+  </g>
+</svg>

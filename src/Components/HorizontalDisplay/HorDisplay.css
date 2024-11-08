@@ -1,0 +1,144 @@
+.horDisplaySection {
+    display: block;
+    width: 100%;
+    justify-items: center;
+}
+.itemContainer {
+    display: block;
+}
+.itemTitle {
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(180deg, #f86ab8, #16b7e8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    padding: 1%;
+    font-size: clamp(18px, 2vw, 35px);
+}
+/* Dark mode for itemText */
+.horDisplaySection.dark-mode .itemText {
+    color: #e0e0e0; /* Light text color for dark mode */
+}
+.horDisplaySection.dark-mode {
+    background-color: #333;/* Dark background for the section */
+}
+.slide-title {
+    background: linear-gradient(180deg, #f86ab8, #16b7e8);    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+.slide-title.dark-mode {
+    background: linear-gradient(180deg, #ffb8df, #62d7ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+.itemImage {
+    width: 40%;
+    height: auto; /* Maintain aspect ratio */
+    background-size: cover;
+    min-width: 200px;
+    max-width: 100%; /* Ensure the image does not exceed its container */
+}
+.horDisplaySection {
+    overflow: hidden; /* Prevent overflow during animation */
+}
+
+.itemContainer {
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start slightly below */
+    transition: opacity 1.5s ease, transform 1s ease; /* Animation */
+}
+
+.itemContainer {
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start slightly below */
+    transition: opacity 1.5s ease, transform 1s ease; /* Animation */
+}
+
+.itemContainer.fadeIn {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+}
+
+.itemContainer.fadeOut {
+    opacity: 0; /* Fade out */
+    transform: translateY(20px); /* Move down */
+}
+.item {
+    display: flex;
+    width: 100%;
+    justify-content: center; /* Center items horizontally */
+    flex-direction: row; /* Ensure proper alignment */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    align-items: center; /* Center content vertically */
+}
+.itemText {
+    color: #3b3b3b;
+    width: 50%;
+    margin: 0;
+
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: clamp(18px, 1.3vw, 27px);
+}
+.prestation-meta {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.prestationContainer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.prestationContainer.show {
+    max-height: 300px; /* Ajustez selon la taille de contenu maximale */
+}
+
+.showMoreButton {
+    margin-top: 10px;
+    cursor: pointer;
+    color: #131313;
+    background: none;
+    border: none;
+    font-size: 16px;
+    text-decoration: underline;
+    padding: 5px 0;
+}
+.pres-item.dark-mode {
+    color: #ffffff;
+}
+.pres-item.light-mode {
+    color: #252525;
+}
+.showMoreButton.dark-mode{
+    cursor: pointer;
+    color: #ffffff;
+    background: none;
+    border: none;
+    font-size: 16px;
+    text-decoration: underline;
+    padding: 5px 0;
+}
+@media (max-width: 700px) {
+    .item {
+        flex-direction: column; /* Stack content vertically on small screens */
+    }
+
+    .itemImage {
+        width: 90%; /* Make the image take full width on small screens */
+        margin-bottom: 15px; /* Add space between the image and text */
+    }
+
+    .itemText {
+        width: 95%; /* Make the text take full width on small screens */
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center; /* Center text for better readability */
+    }
+}

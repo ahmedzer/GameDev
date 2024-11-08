@@ -1,0 +1,141 @@
+.my-form {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    width: 70%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.my-form.dark-mode {
+    background-color: #333;
+    color: #ffffff;
+}
+input, textarea {
+    color-scheme: light;
+    background-color: white;
+    border-radius: 7px;
+    color: black;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+.modal-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-btn {
+    background-color: #16b7e8;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 7.5px;
+    border: none;
+}
+
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+    justify-content: center;
+}
+.modal-container.dark {
+    background-color: #333;
+    color: white; /* Light text color */
+}
+.arrow-icon {
+    margin-left: 8px; /* Space between button text and arrow */
+    animation: bounce 1s infinite;
+
+    font-size: 70px;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+#timepicker {
+    display: block;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    z-index: 100000;
+}
+.modal-overlay.dark {
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+}
+/* The modal dialog itself */
+.modal-content {
+    background-color: #ffffff !important;
+    padding: 10px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 1001;
+    position: relative;
+}
+
+.modal-content.dark {
+    background-color: #333  !important;
+    color: white; /* Light text color */
+}
+/* Close button for the modal */
+.close-button {
+    position: absolute;
+    top: 10px;
+    color: #1a1a1a;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.close-button.dark {
+    color: #ffffff !important;
+}
+/* Style the form inputs and buttons */
+form input, form button, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+input[type="datetime-local"].dark {
+    background-color: #333; /* Darker background for the date input */
+    color: white; /* Light text color */
+    border: 1px solid #777; /* Darker border */
+}
+
+input[type="datetime-local"].dark::placeholder {
+    color: #ccc; /* Lighter color for placeholder text */
+}
+input.dark,
+textarea.dark {
+
+    background-color: #0b0b0b;
+    color: white; /* Light text color */
+    border: 1px solid #777; /* Darker border */
+}
+@media (max-width: 700px) {
+    form {
+        width: 95%;
+    }
+
+}

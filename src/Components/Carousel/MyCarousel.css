@@ -1,0 +1,27 @@
+.carousel {
+    width: 60% !important;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+}
+.carousel-item {
+    border-radius: 50px !important ;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; /* Change to any color you like */
+}
+.carousel-caption h3, p {
+    color: black;
+}
+.carousel-indicators button {
+    background-color: black !important;
+}
+.carousel-indicators .active {
+    background-color: #4abbff !important;
+}
+.MyCarouselContainer {
+    width: 100%;  /* Full width of the parent */
+    display: flex;
+    justify-content: center;
+}
